@@ -55,9 +55,9 @@ function editData(key) {
   document.getElementById('userName').value = localStorageArray[key];
 }
 
-function deleteData(rid) {
+function deleteData(key) {
   let localStorageArray = getData();
-  localStorageArray.splice(rid, 1);
+  localStorageArray.splice(key, 1);
   setData(localStorageArray);
   displayData();
 }
