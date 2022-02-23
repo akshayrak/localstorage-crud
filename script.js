@@ -15,6 +15,7 @@ function createData() {
     let localStorageArray = getData();
     localStorageArray[id] = userName;
     setData(localStorageArray);
+    id = 'empty';
   }
   document.getElementById('userName').value = '';
   displayData();
